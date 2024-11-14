@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is my Portfolio">
+  <title>Portfolio</title>
+
+  <link rel="shortcut icon" href="/images/Name logo 1.png" type="image/x-icon">
+  <link href="./output.css" rel="stylesheet" />
+  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head> 
+<body class="body h-screen w-full font-serif  text-white bg-gray-800 ">
+  <!-- 0.pre-loder section -->
+  <div class="pre-loder  h-screen w-full bg-[#1c1d21] z-20 fixed top-0  flex flex-col justify-center items-center "> 
+    <img class=" w-52" src="/images/Preloader.gif" alt="Preloader">
+  </div>
+
+  <!-- 1.header section -->
+  <div class="header-container w-full bg-gray-900">
+    <div class="header-content w-full max-w-5xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
+      <!-- logo container -->
+      <div class="logo w-6 sm:w-8 shrink-0">
+        <a href="#"><img class="h-full w-full" src="/images/Name logo 1.png" alt="logo" /></a>
+      </div>
+      <!-- nav bar -->
+      <div class="nav transition-all duration-300 fixed z-10 top-0 -right-[244px] bg-gray-600 h-screen sm:static sm:h-auto sm:flex sm:bg-transparent sm:justify-center sm:gap-14 sm:text-slate-400">
+        <div class="sm:hidden"><i class="cancel text-2xl px-4 pt-5 ml-48   cursor-pointer fa-solid fa-xmark"></i></div>
+        <a class="block pr-40 pl-4 pb-4 pt-0 sm:py-3 sm:pr-0 sm:pl-0 font-semibold  sm:font-medium hover:text-white sm:border-b-2 border-transparent hover:border-white"
+          href="#home">Home</a>
+        <a class="block pr-40 pl-4 py-4 sm:py-3 sm:pr-0 sm:pl-0 font-semibold  sm:font-medium hover:text-white sm:border-b-2 border-transparent hover:border-white"
+          href="#about">About</a>
+        <a class="block pr-40 pl-4 py-4 sm:py-3 sm:pr-0 sm:pl-0 font-semibold  sm:font-medium hover:text-white sm:border-b-2 border-transparent hover:border-white"
+          href="#Projects">Projects</a>
+        <a class="block pr-40 pl-4 py-4 sm:py-3 sm:pr-0 sm:pl-0 font-semibold  sm:font-medium hover:text-white sm:border-b-2 border-transparent hover:border-white"
+          href="#Contact">Contact</a>
+      </div>
+      <!-- socal media container -->
+      <div class="socal-media hidden sm:flex sm:items-center gap-6">
+        <a href="https://www.linkedin.com/in/suvo-ghosh-89bbb6227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="w-5 hover:-translate-y-1.5 duration-300 " src="/images/linkedin.svg" alt="linkedin" /></a>
+        <a href="https://github.com/Suvo-Ghosh" target="_blank"><img class="w-5 hover:-translate-y-1.5 duration-300" src="/images/github.svg" alt="github" /></a>
+        <a href="https://www.facebook.com/profile.php?id=100053487737463" target="_blank"><img class="w-5 hover:-translate-y-1.5 duration-300" src="/images/facebook.svg" alt="facebook" /></a>
+      </div>
+      <!-- ham burger -->
+      <img class="ham-menu w-5 sm:hidden cursor-pointer" src="/images/menu-burger.svg" alt="" />
+    </div>
+  </div>
+ 
+  <!-- 2.hero section -->
+  <div class="hero-container w-full  bg-gray-800 mb-4">
+    <div
+      class="px-4 py-4 sm:px-8 hero-contant flex flex-col max-w-5xl w-full mx-auto items-center sm:flex-row-reverse sm:justify-between">
+      <!-- hero main image -->
+      <div class="image w-60 sm:w-80 mb-4">
+        <img class="w-full h-full rounded-full" src="/images/IMG20240510181101-removebg-preview.png" alt="" />
+      </div>
+      <!-- hero name box  -->
+      <div class="name flex flex-col text-slate-300">
+        <span
+          class="text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-violet-500 via-orange-300  to-blue-400 font-extrabold text-transparent bg-clip-text">Hello,
+          I'm Suvo Ghosh,</span>
+        <span class="text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Full Stack Developer</span>
+        <!-- hero button section -->
+        <div class="btns mt-4 text-white">
+          <a href="/images/Suvo.pdf" download
+            class="hero-btns group">
+            <i class="fa-solid fa-download mr-1 animate-bounce group-hover:animate-none"></i>
+            <span>Downlode CV</span>
+          </a >
+          <a href="mailto:it.20203019@gmail.com"
+            class="hero-btns mr-0 group">
+            <i class="fa-solid fa-envelope mr-2 sm:group-hover:-translate-y-1.5 duration-300"></i>
+            <span>Hire Me</span>
+          </a>
+        </div>
+      </div>
+    </div>   
+  </div>
+
+  <!-- 3.About section -->
+  <div class="w-full bg-gray-700 mb-6" id="about">
+    <div class="about-contant px-2 py-6 mx-auto w-full max-w-5xl">
+      <!-- Heading -->
+      <h1 class="text-center text-2xl sm:text-4xl  font-bold mb-2 sm:mb-6 text-emerald-200">ABOUT ME</h1>
+      <!-- About para and image -->
+      <div class="flex gap-4  flex-col sm:flex-row">
+        <img class="w-56 sm:block shadow-md shadow-black    mx-auto rounded-sm" src="../images/photo.jpg" alt="photo" />
+        <div class="">
+          <p class="">
+            My name is Suvo Ghosh . I'm from Burdwan,West Bengal. I have completed my Bachelor of Engineering from University Institute of
+            Technology (UIT) specialization in Information Technology.
+          </p>
+          <div class="my-3">
+            <ul class="about-ul flex gap-12 text-lg font-semibold">
+              <li class="edu-label cursor-pointer border-b-2 border-blue-500 ">Education</li>
+              <li class="skill-label cursor-pointer border-b-2 border-transparent">Skills</li>
+            </ul>
+          </div>
+          <div class="edu-info">
+            <ul>
+              <li><span class="text-blue-400 font-semibold">2024</span><br>Bachlor of Engineering ,IT | CGPA- 8.43
+              </li>
+              
+              <li><span class="text-blue-400 font-semibold">2020</span><br>Higher Secondary | 95%
+              </li>
+              
+              <li><span class="text-blue-400 font-semibold">2018</span><br>Secondary | 85.42%
+              </li>
+            </ul>
+          </div>
+          <div class="skill-info hidden">
+            <ul class="text-lg">
+              <li>Javascript</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Tailwind</li>
+              <li>Sql</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4.Projects -->
+  <div class="projects-container w-full mt-3 sm:mb-8" id="Projects">
+    <div class="projects-contant w-full max-w-5xl mx-auto flex flex-col justify-center items-center">
+      <h1 class="text-center text-2xl sm:text-4xl  font-bold mb-4 text-emerald-200   relative ">PROJECTS </h1>
+      <div class="grid w-3/4 sm:grid-cols-2 gap-5 mx-auto mb-3">
+
+        <div class="shadow-md shadow-black project-4 p-5 rounded-md   hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/StydyBuddy.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">Stydy Buddy</h1> 
+          <div class="btns mt-4">
+            <a href="https://study-buddy9.netlify.app" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+        </div>
+
+        <div class="project-1 p-5 rounded-md hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500 shadow-md shadow-black">
+          <img class="w-full rounded-sm" src="/images/NotesApp.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">Notes</h1>
+          <!-- <p>Performs basis arithmatic operations.</p> -->
+          <div class="btns mt-4">
+            <a href="https://notesapp9.netlify.app" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+
+        </div>
+
+        <div class="shadow-md shadow-black project-2 p-5 rounded-md   hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/currency converter.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">Currency Converter</h1>
+          <!-- <p>Converting any currency to another currency.</p> -->
+          <div class="btns mt-4">
+            <a href="https://currency-converter6.netlify.app/" target="_blank"
+              class="pro-btns ">
+              Live Preview
+            </a>
+          </div>
+        </div>
+
+        <div class="shadow-md shadow-black project-3 p-5 rounded-md   hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/BillSplitter.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">Bill Splitter</h1>
+          <!-- <p>A modern dynamic login page.</p> -->
+          <div class="btns mt-4">
+            <a href="https://bill-splitter3.netlify.app/" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+        </div>
+
+        <div class="shadow-md shadow-black project-5 hidden p-5 rounded-md   hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/QR.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">QR Generator</h1>
+          <!-- <p>Using html,css,javascript</p> -->
+          <div class="btns mt-4">
+            <a href="https://qr-code9.netlify.app/" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+        </div>
+
+        <div class="shadow-md shadow-black project-6 hidden p-5 rounded-md   hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/Snake.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">Snake Game</h1> 
+          <div class="btns mt-4">
+            <a href="https://simple-snake-game3.netlify.app/" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+        </div>
+
+        <div class="shadow-sm shadow-black project-7 hidden p-5 rounded-md  hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/AgeCalculator.png" alt="Project Image">
+          <h1 class="text-lg font-semibold mt-1">Age Calculator</h1> 
+          <div class="btns mt-4">
+            <a href="https://simple-age-calculator9.netlify.app/" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+        </div>
+        
+        <div class="shadow-sm shadow-black project-8 hidden p-5 rounded-md   hover:bg-blue-400 hover:border-transparent hover:-translate-y-2.5 transition-all duration-500">
+          <img class="w-full rounded-sm" src="/images/Todo.png" alt="Project Image">
+          <h1 class="text-lg font-semibold">ToDo</h1>
+          <!-- <p>Using Html,Css & Javascript</p> -->
+          <div class="btns mt-4">
+            <a href="https://to-do3.netlify.app/" target="_blank"
+              class="pro-btns">
+              Live Preview
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <h1 class="see-more cursor-pointer text-center text-xl font-semibold mb-6">See More . . .</h1>
+  </div>
+
+  <!-- 5.Contacts section -->
+   <div class="contact-container w-full bg-gray-700" id="Contact">
+    <div class="contact-content flex flex-col gap-8 sm:gap-4 sm:flex-row max-w-5xl mx-auto px-6 w-full">
+      <!-- left -->
+      <div class="sm:w-1/2 flex justify-center sm:justify-end mt-4">
+        <div class="left flex flex-col gap-3 sm:w-3/4 ">
+          <p class="text-4xl sm:text-5xl text-orange-300 font-bold mb-3 ">Contact  Me
+          </p>
+          <div class="">
+            <i class="fa-solid fa-envelope mr-2"></i>
+            <a href="mailto:it.20203019@gmail.com">it.20203019@gmail.com</a>
+          </div>
+          <div class=""><i class="fa-solid fa-phone mr-2"></i>9641800663</div>
+          <div class="socal space-x-2">
+            <a href="https://www.facebook.com/profile.php?id=100053487737463" target="_blank"><i alt="facebook-profile" class="fa-brands fa-facebook text-2xl hover:text-blue-500 duration-200 hover:-translate-y-1.5"></i></a>
+            <a href="https://www.linkedin.com/in/suvo-ghosh-89bbb6227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i alt="linkdin-profile" class="fa-brands fa-linkedin text-2xl hover:text-blue-500 duration-200 hover:-translate-y-1.5"></i></a>
+            <a href="https://github.com/Suvo-Ghosh" target="_blank"><i alt="github-profile" class="fa-brands fa-github text-2xl hover:text-gray-900 duration-200 hover:-translate-y-1.5"></i></a>
+          </div>
+          <a href="/images/Suvo.pdf" download class="w-fit flex items-center pro-btns">
+            <i class="fa-solid fa-download mr-1 animate-bounce"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="flex items-center justify-center sm:w-1/2 sm:justify-start ">
+        <div class="right w-3/4">
+          <form name="submit-to-google-sheet" class="flex flex-col gap-4 w-full text-black my-4">
+            <input class="p-2 rounded-sm outline-none" type="text" name="Name" placeholder="Enter Your Name" required>
+            <input class="p-2 rounded-sm outline-none" type="email" name="Email" placeholder="Enter Email" required >
+            <textarea class="p-2 rounded-sm resize-none outline-none" name="Message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="pro-btns py-2">Submit</button>
+          </form>
+          <span class="succ-msg text-green-500 mb-4 text-lg"></span>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- 6.Footer -->
+    <div class="w-full text-center bg-black py-4">Copyright © 2024 <br>Made By Suvo</div>
+</body>
+</html>
