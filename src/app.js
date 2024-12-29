@@ -13,7 +13,7 @@ const eduInfo = document.querySelector('.edu-info');
 
 const seeMore = document.querySelector('.see-more');
 const project5 = document.querySelector('.project-5');
-// const project6 = document.querySelector('.project-6');  
+const project6 = document.querySelector('.project-6');
 const project7 = document.querySelector('.project-7');
 const project8 = document.querySelector('.project-8');
 
@@ -70,7 +70,7 @@ eduLabel.addEventListener("click", () => {
 seeMore.addEventListener('click', () => {
    seeMore.innerHTML = "See Less  . . . ";
 
-   // project6.classList.toggle("hidden")
+   project6.classList.toggle("hidden")
    project7.classList.toggle("hidden")
    project5.classList.toggle("hidden")
    project8.classList.toggle("hidden")
@@ -82,21 +82,25 @@ seeMore.addEventListener('click', () => {
 
 // Form section
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbykNCSEKUzMehy-SoQXLCpdN_Nmi_YZl27zcgM3hY7WVvV6-HZt54aWutvpuXPjlOpVMA/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.querySelector('.succ-msg')
+//Getting infi in google sheet
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbykNCSEKUzMehy-SoQXLCpdN_Nmi_YZl27zcgM3hY7WVvV6-HZt54aWutvpuXPjlOpVMA/exec'
+// const form = document.forms['submit-to-google-sheet']
+// const msg = document.querySelector('.succ-msg')
 
-form.addEventListener('submit', e => {
-   e.preventDefault()
-   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => {
-         form.reset()
-         msg.innerText = "Message sent successfully"
-         setTimeout(() => {
-            msg.innerHTML = ""
-         }, 3000)
+// form.addEventListener('submit', e => {
+//    e.preventDefault()
+//    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//       .then(response => {
+//          form.reset()
+//          msg.innerText = "Message sent successfully"
+//          setTimeout(() => {
+//             msg.innerHTML = ""
+//          }, 3000)
 
-      })
-      .catch(error => console.error('Error!', error.message))
-})
+//       })
+//       .catch(error => console.error('Error!', error.message))
+// })
+
+// getting info in mail
+
 
