@@ -81,26 +81,11 @@ seeMore.addEventListener('click', () => {
 })
 
 // Form section
+window.onbeforeunload = () => {
+   for (const form of document.getElementsByTagName('form')) {
+      form.reset();
+   }
+}
 
-//Getting infi in google sheet
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbykNCSEKUzMehy-SoQXLCpdN_Nmi_YZl27zcgM3hY7WVvV6-HZt54aWutvpuXPjlOpVMA/exec'
-// const form = document.forms['submit-to-google-sheet']
-// const msg = document.querySelector('.succ-msg')
-
-// form.addEventListener('submit', e => {
-//    e.preventDefault()
-//    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-//       .then(response => {
-//          form.reset()
-//          msg.innerText = "Message sent successfully"
-//          setTimeout(() => {
-//             msg.innerHTML = ""
-//          }, 3000)
-
-//       })
-//       .catch(error => console.error('Error!', error.message))
-// })
-
-// getting info in mail
 
 
